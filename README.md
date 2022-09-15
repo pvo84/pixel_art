@@ -8,6 +8,7 @@ Project includes three major features:
 - you can choose the size of the grid (minimum 2x2, and max 50x50. The default size is 16x16);
 - you can choose the color of a pixel.
 
+Used in this project:
 - HTML (DOM methods);
 - CSS;
 - JavaScript.
