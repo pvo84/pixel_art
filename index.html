@@ -1,0 +1,38 @@
+<!--
+ORIp_2295098
+PIEj_2295295
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créateur d'art Pixelisé</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Art pixelisé'</h2>
+    <br>
+    <div class = "options">
+    <label for="size">Taille de la grille</label>
+    <input type="range" min=2 max=50 id="gridSizeInput" name="size" value="16"/>
+    <p id="sizeDisplay"></p>
+    <label for="color">Choisissez vos couleurs</label>
+    <input type="color" id="colorInput" name="color"/>
+    <div id="colorInputDisplay"></div>
+
+    <button id="erase">Effacer la palette</button>
+ </div> 
+    <div id="grid"></div>
+
+  </div>
+<script src="index.js"></script>
+</body>
+</html>

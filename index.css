@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4c531;
+}
+
+.container{
+  margin: 10px auto;
+  padding: 40px 20px;
+  border: 1px solid #f1f1f1;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.options {
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+  align-items: center;
+}
+#erase {
+  background-color: #f4c531;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+#erase:hover {
+  background-color: #c71515;
+  color:#ffffff;
+}
+
+#erase:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+/* https://code-boxx.com/create-grid-javascript/ */
+#grid {
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(var(--amount), 1fr);
+    grid-template-rows: repeat(var(--amount), 1fr);
+}
+
+.gridSquare {
+  background-color: white;
+  border: 1px black solid;
+  box-sizing: border-box;
+}
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 70px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 8px;
+  border: 1px solid #000000;
+}
+input[type="color"]::-moz-color-swatch {
+  border-radius: 8px;
+  border: 1px solid #000000;
+}
+
+#colorInputDisplay {
+  border: 1px black solid;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  display: grid;
+  gap:1px; 
+  /*grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));*/
+}
+
